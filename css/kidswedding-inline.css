@@ -3333,7 +3333,8 @@
 #rec1385503291 .guest-form__input {
   background-color: transparent;
   border: 1px solid #fdf9e2;
-  font-family: cursive;
+  font-weight: 700;
+  font-family: "shablon3", Arial, sans-serif;
   border-radius: 25px;
   padding: 12px 18px;
   color: #fdf9e2;

@@ -3635,7 +3635,8 @@ $breakpoint-479: 479px;
 #rec1385503291 .guest-form__input {
   background-color: transparent;
   border: 1px solid #fdf9e2;
-  font-family: cursive;
+  font-weight: 700;
+  font-family: "shablon3", Arial, sans-serif;
   border-radius: 25px;
   padding: 12px 18px;
   color: #fdf9e2;
@@ -3645,6 +3646,7 @@ $breakpoint-479: 479px;
 
 #rec1385503291 .guest-form__input::placeholder {
   color: rgba(253, 249, 226, 0.7);
+
 }
 
 #rec1385503291 .guest-form__option {
