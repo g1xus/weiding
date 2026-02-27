@@ -876,7 +876,7 @@
     opacity: 1 !important;
     visibility: visible !important;
     top: 100px;
-    left: 50% !important;
+    left: 150% !important;
     margin-left: -80px; /* половина width 260px */
     width: 260px;
     height: auto;
@@ -3730,3 +3730,5 @@
     height: auto;
   }
 }
+
+/*# sourceMappingURL=kidswedding-inline.css.map */
