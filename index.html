@@ -60,42 +60,14 @@
       0%, 100% { transform: scale(1); opacity: 1; }
       50% { transform: scale(1.15); opacity: 0.85; }
     }
-    /* Дата по центру: на всю ширину блока, текст по центру */
-    #rec1385403381 .t-date-center,
+    /* Центрируем дату в блоке с датой */
     #rec1385403381 .tn-elem__1385403381175950412650313600 {
-      left: 0 !important;
-      right: 0 !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      text-align: center;
-      box-sizing: border-box;
-    }
-    #rec1385403381 .t-date-center .tn-atom,
-    #rec1385403381 .tn-elem__1385403381175950412650313600 .tn-atom {
+      left: 50% !important;
+      margin-left: 0 !important;
+      transform: translateX(-50%);
       text-align: center;
     }
   </style>
-  <script>
-    (function() {
-      function centerDate() {
-        var el = document.querySelector('#rec1385403381 .tn-elem__1385403381175950412650313600');
-        if (el) {
-          el.style.setProperty('left', '0', 'important');
-          el.style.setProperty('right', '0', 'important');
-          el.style.setProperty('width', '100%', 'important');
-          el.style.setProperty('max-width', '100%', 'important');
-          el.style.textAlign = 'center';
-        }
-      }
-      t_onReady(function() {
-        centerDate();
-        setTimeout(centerDate, 350);
-        setTimeout(centerDate, 800);
-        window.addEventListener('load', centerDate);
-        window.addEventListener('resize', centerDate);
-      });
-    })();
-  </script>
   <script nomodule src="https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
   <script type="text/javascript">
     function t_onReady(func) {
