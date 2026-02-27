@@ -817,7 +817,6 @@
   margin-left: -182px; /* половина width 365px */
   width: 365px;
   height: auto;
-  transform: translateX(-100vw); /* до анимации — за экраном слева; анимация доведёт до 0 */
 }
 
 #rec1385403381 .tn-elem[data-elem-id="175950412650313600"] .tn-atom {
@@ -3379,11 +3378,54 @@
 
 #rec1385503291 .guest-form__option input[type=radio],
 #rec1385503291 .guest-form__option input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
   width: 18px;
   height: 18px;
-  accent-color: #fdf9e2;
 }
 
+#rec1385503291 .guest-form__option input[type=radio] + span,
+#rec1385503291 .guest-form__option input[type=checkbox] + span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+#rec1385503291 .guest-form__option input[type=radio] + span::before,
+#rec1385503291 .guest-form__option input[type=checkbox] + span::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 1.5px solid #fdf9e2;
+  background-color: transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#rec1385503291 .guest-form__option input[type=radio] + span::before {
+  border-radius: 999px;
+}
+
+#rec1385503291 .guest-form__option input[type=checkbox] + span::before {
+  border-radius: 6px;
+}
+
+#rec1385503291 .guest-form__option input[type=radio]:checked + span::before,
+#rec1385503291 .guest-form__option input[type=checkbox]:checked + span::before {
+  background-color: #fdf9e2;
+  border-color: #fdf9e2;
+  box-shadow: 0 0 0 2px rgba(253, 249, 226, 0.35);
+}
+
+#rec1385503291 .guest-form__option input[type=radio]:focus-visible + span::before,
+#rec1385503291 .guest-form__option input[type=checkbox]:focus-visible + span::before {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Внутренние точки/галочки убраны — остаётся только заливка маркера */
 #rec1385503291 .guest-form__submit {
   margin-top: 10px;
   align-self: center;
