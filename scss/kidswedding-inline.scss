@@ -175,6 +175,24 @@ $breakpoint-479: 479px;
     height: auto;
 }
 }
+
+/* QR-код на сайт — только на экранах от 640px */
+#rec1394235481 .tn-elem__1394235481_qrcode {
+  position: absolute;
+  z-index: 3;
+  top: calc(50vh - 275px + 310px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+#rec1394235481 .tn-elem__1394235481_qrcode .tn-atom__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* === INLINE STYLE BLOCK 2 === */
 #rec1385340331 .t396__artboard  {
   height: 559px;
@@ -864,7 +882,7 @@ $breakpoint-479: 479px;
 }
 }
 
-// Дата 06.06.2026 — поверх календаря и видна при скролле
+// Дата — выкатывается слева в центр; до запуска анимации скрыта за экраном
 #rec1385403381 .tn-elem[data-elem-id="175950412650313600"]  {
   color: #c2255b;
   text-align: center;
@@ -873,9 +891,11 @@ $breakpoint-479: 479px;
   opacity: 1 !important;
   visibility: visible !important;
   top: 142px !important;
-  left: calc(50% - 600px + 520) !important;
+  left: 50% !important;
+  margin-left: -182px; /* половина width 365px */
   width: 365px;
   height: auto;
+  transform: translateX(-100vw); /* до анимации — за экраном слева; анимация доведёт до 0 */
 }
 
 #rec1385403381 .tn-elem[data-elem-id="175950412650313600"] .tn-atom  {
@@ -911,7 +931,8 @@ $breakpoint-479: 479px;
     opacity: 1 !important;
     visibility: visible !important;
     top: 118px;
-    left: calc(50% - 320px + 88px);
+    left: 50% !important;
+    margin-left: -182px;
     height: auto;
 }
 }
@@ -923,7 +944,8 @@ $breakpoint-479: 479px;
     opacity: 1 !important;
     visibility: visible !important;
     top: 110px;
-    left: calc(50% - 240px + 38px);
+    left: 50% !important;
+    margin-left: -78px; /* половина ~155px на мобиле */
     height: auto;
 }
 }
@@ -935,7 +957,8 @@ $breakpoint-479: 479px;
     opacity: 1 !important;
     visibility: visible !important;
     top: 100px;
-    left: calc(50% - 160px + 30px);
+    left: 50% !important;
+    margin-left: -80px; /* половина width 260px */
     width: 260px;
     height: auto;
 }

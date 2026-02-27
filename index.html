@@ -31,6 +31,36 @@
   <link rel="stylesheet" href="css/tilda-forms-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" />
   <link rel="stylesheet" type="text/css" href="css/kidswedding-inline.css" />
   <link rel="stylesheet" type="text/css" href="/custom.css?t=1771507773">
+  <style>
+    #preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #fdf9e2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    #preloader.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .preloader-heart {
+      width: 80px;
+      height: 74px;
+      animation: preloader-heart-pulse 0.8s ease-in-out infinite;
+    }
+    .preloader-heart path {
+      fill: #C2255B;
+    }
+    @keyframes preloader-heart-pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.85; }
+    }
+  </style>
   <script nomodule src="https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
   <script type="text/javascript">
     function t_onReady(func) {
@@ -152,6 +182,11 @@
 </head>
 
 <body class="t-body" style="margin:0;">
+  <div id="preloader">
+    <svg class="preloader-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.1 36" fill="none" aria-hidden="true">
+      <path d="M4.01 1.06C14.14 -3.45 18.95 7.48 20.09 13.51C23.02 7.51 30.56 -3.06 37.28 2.61C44.01 8.28 28.89 28.39 18.34 35.86C12.15 30.32 -8.65 6.7 4.01 1.06Z"/>
+    </svg>
+  </div>
   <!--allrecords-->
   <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6541539" data-tilda-page-id="83277506" data-tilda-page-alias="kidswedding" data-tilda-formskey="15bc664cf2daf81f6ffe51aec6541539" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU">
     <div id="rec1394235481" class="r t-rec t-screenmin-640px" style=" " data-animationappear="off" data-record-type="396" data-screen-min="640px">
@@ -169,6 +204,9 @@
                 <path d="M4.012822522910537 1.0616699761506099C14.141918859979908 -3.445151423436062 18.953849155498915 7.482704024515334 20.09367414807362 13.509969480793947C23.02026596664623 7.512962881489165 30.555468485400937 -3.063590972657416 37.283643629475 2.606296214012583C44.011569729458756 8.276183400682584 28.889114477072553 28.39102629643337 18.33771407604825 35.8623490060211C12.145656145205164 30.319623731868283 -8.648554124528435 6.695201706515756 4.012822522910537 1.0616699761506099Z" fill="#C2255B"></path>
               </svg>
             </div>
+          </div>
+          <div style="position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);width:120px;height:120px;">
+            <img src="img/qr-code.png" alt="QR-код на сайт" style="display:block;width:100%;height:100%;object-fit:contain;" />
           </div>
         </div>
       </div>
@@ -267,7 +305,7 @@
           <div class='t396__elem tn-elem tn-elem__13854033811765092799263' data-elem-id='1765092799263' data-elem-type='image' data-field-top-value="20" data-field-left-value="20" data-field-height-value="210" data-field-width-value="200" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-filewidth-value="1392" data-field-fileheight-value="1464" data-field-heightmode-value="hug" data-field-top-res-320-value="168" data-field-left-res-320-value="24" data-field-height-res-320-value="287" data-field-width-res-320-value="273" data-field-widthmode-res-320-value="fixed">
             <div class='tn-atom'> <img class='tn-atom__img' src='img/calendar.png' alt='' imgfield='tn_img_1765092799263' /> </div>
           </div>
-          <div class='t396__elem tn-elem tn-elem__1385403381175950412650313600 t-animate' data-elem-id='175950412650313600' data-elem-type='text' data-field-top-value="305" data-field-left-value="31" data-field-height-value="40" data-field-width-value="365" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinright" data-animate-duration="2" data-animate-distance="300" data-animate-mobile="y" data-field-textfit-value="autoheight" data-field-fontsize-value="40" data-field-top-res-320-value="116" data-field-left-res-320-value="83" data-field-height-res-320-value="32" data-field-width-res-320-value="155" data-animate-distance-res-320="300" data-field-fontsize-res-320-value="32" data-field-top-res-480-value="156" data-field-left-res-480-value="58" data-field-top-res-640-value="149" data-field-left-res-640-value="138">
+          <div class='t396__elem tn-elem tn-elem__1385403381175950412650313600 t-animate' data-elem-id='175950412650313600' data-elem-type='text' data-field-top-value="305" data-field-left-value="31" data-field-height-value="40" data-field-width-value="365" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-animate-style="fadeinright" data-animate-duration="2" data-animate-distance="800" data-animate-mobile="y" data-animate-distance-res-320="400" data-field-textfit-value="autoheight" data-field-fontsize-value="40" data-field-top-res-320-value="116" data-field-left-res-320-value="-100" data-field-height-res-320-value="32" data-field-width-res-320-value="155" data-animate-distance-res-320="300" data-field-fontsize-res-320-value="32" data-field-top-res-480-value="156" data-field-left-res-480-value="58" data-field-top-res-640-value="149" data-field-left-res-640-value="138">
             <div class='tn-atom' field='tn_text_175950412650313600'>07.08.2026</div>
           </div>
           <div class='t396__elem tn-elem tn-elem__13854033811759739286353' data-elem-id='1759739286353' data-elem-type='text' data-field-top-value="226" data-field-left-value="20" data-field-height-value="96" data-field-width-value="560" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-textfit-value="autoheight" data-field-fontsize-value="20" data-field-top-res-320-value="60" data-field-left-res-320-value="10" data-field-height-res-320-value="76" data-field-width-res-320-value="301" data-field-fontsize-res-320-value="14" data-field-top-res-480-value="60" data-field-left-res-480-value="-40" data-field-top-res-640-value="60" data-field-left-res-640-value="40">
@@ -786,6 +824,54 @@
         }
       })(document, window, 'e907dc1c313a3e20713bbfeb7d3fba48', 'script', 'https://static.tildacdn.com/js/tilda-stat-1.0.min.js');
     }, 2000);
+  </script>
+  <script>
+    (function() {
+      var preloader = document.getElementById('preloader');
+      if (!preloader) return;
+
+      function hidePreloader() {
+        preloader.classList.add('hidden');
+        setTimeout(function() {
+          preloader.remove();
+        }, 550);
+      }
+
+      function getImageUrls() {
+        var urls = [];
+        document.querySelectorAll('img[src]').forEach(function(img) {
+          var src = img.getAttribute('src');
+          if (src && src.indexOf('data:') !== 0) urls.push(src);
+        });
+        document.querySelectorAll('[style*="background-image"]').forEach(function(el) {
+          var m = (el.getAttribute('style') || '').match(/url\s*\(\s*['"]?([^'")]+)['"]?\s*\)/);
+          if (m && m[1].indexOf('data:') !== 0) urls.push(m[1]);
+        });
+        return urls;
+      }
+
+      function loadImage(url) {
+        return new Promise(function(resolve, reject) {
+          var img = new Image();
+          img.onload = resolve;
+          img.onerror = resolve;
+          img.src = url;
+        });
+      }
+
+      function whenReady() {
+        var imageUrls = getImageUrls();
+        var fontReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+        var imagesReady = Promise.all(imageUrls.map(loadImage));
+        Promise.all([fontReady, imagesReady]).then(hidePreloader).catch(hidePreloader);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', whenReady);
+      } else {
+        whenReady();
+      }
+    })();
   </script>
 </body>
 
